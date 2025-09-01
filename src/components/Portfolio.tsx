@@ -44,13 +44,6 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Fair Split',
-      description: 'A React-based application for splitting expenses among friends with real-time calculations for my 4th semester final project.',
-      tech: ['React', 'JavaScript', 'CSS'],
-      github: '#',
-      live: '#'
-    },
-    {
       title: 'Hotel Website Design',
       description: 'hotel website with modern UI/UX design using figma and react using its front end development. it just contain the lanidng page for learning purpose.',
       tech: ['Figma', 'React', 'CSS', 'JavaScript','TypeScript'],
@@ -73,7 +66,14 @@ const Portfolio = () => {
     }
     ,
     {
-      title: 'BDH LAB',
+      title: 'Fair Split(in development process)',
+      description: 'A React-based application for splitting expenses among friends with real-time calculations for my 4th semester final project.',
+      tech: ['React', 'JavaScript', 'CSS'],
+      github: '#',
+      live: '#'
+    },
+    {
+      title: 'BDH LAB(in development process)',
       description: 'A real world frontend based website for Builders and Devlopers Hand located in chyasal,Lalitpur.',
       tech: ['React', 'Tailwind', 'JavaScript'],
       github: '#',
