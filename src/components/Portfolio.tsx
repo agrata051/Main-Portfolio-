@@ -8,6 +8,9 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import image1 from '@/graphic photo/01.jpg'
 import image2 from '@/graphic photo/02.jpg'
+import image3 from '@/graphic photo/03.jpg'
+import image4 from '@/graphic photo/04.jpg'
+import image5 from '@/graphic photo/05.jpg'
 import { 
   Github, 
   Linkedin, 
@@ -83,14 +86,20 @@ const Portfolio = () => {
    const graphics = [
     
     {
-      title: "Wallpaper Posters",
-      description: "Designed using Canva.",
+       image: image3
+    },
+    {
        image: image1,
     },
      {
-      title: "Poster for Nail Tech",
-      description: "Designed using Canva.",
        image: image2,
+    },
+    {
+       image: image4,
+    },
+    {
+      
+       image: image5,
     },
   ];
 
@@ -235,19 +244,18 @@ const scrollToProjects = () => {
             {/* Graphics */}
             <TabsContent value="graphics" className="grid md:grid-cols-2 gap-8">
               {graphics.map((item) => (
-                <Card key={item.title} className="p-10 text-left">
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <Card>
                   {item.image && (
                     <div className="w-full flex justify-center items-center bg-muted rounded-lg mb-4 border" style={{ minHeight: '200px', maxHeight: '400px', height: 'auto' }}>
                       <img
                         src={item.image}
-                        alt={item.title}
+                      
                         className="max-w-full max-h-96 object-contain"
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
                     </div>
                   )}
-                  <p className="text-muted-foreground">{item.description}</p>
+                
                 </Card>
               ))}
             </TabsContent>
