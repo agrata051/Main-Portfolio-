@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import image1 from '@/graphic photo/01.jpg'
 import { 
   Github, 
   Linkedin, 
@@ -51,23 +52,23 @@ const Portfolio = () => {
     {
       title: 'Hotel Website Design',
       description: 'hotel website with modern UI/UX design using figma and react using its front end development. it just contain the lanidng page for learning purpose.',
-      tech: ['Figma', 'React', 'CSS', 'JavaScript'],
+      tech: ['Figma', 'React', 'CSS', 'JavaScript','TypeScript'],
       github: 'https://github.com/agrata051/Bholenath-Hotel',
       live: 'https://bholenath-hotel.vercel.app/'
     },
     {
       title: 'Photography Portfolio',
       description: 'A portfolio website i made for showcasing my photography work just for learning.',
-      tech: [ 'React', 'CSS'],
+      tech: [ 'JavaScript', 'CSS','HTML'],
       github: 'https://github.com/agrata051/portfolio-photography',
       live: 'https://portfolio-vert-five-20.vercel.app/'
     },
     {
       title: 'This Portfolio Website',
       description: 'Personal portfolio showcasing projects and skills with modern design principles.',
-      tech: ['React', 'Tailwind', 'Javascript'],
-      github: '#',
-      live: '#'
+      tech: ['React', 'Typescript', 'CSS'],
+      github: 'https://github.com/agrata051/Main-Portfolio-',
+      live: 'https://main-portfolio-m255.vercel.app/'
     }
     ,
     {
@@ -79,13 +80,11 @@ const Portfolio = () => {
     }
   ];
    const graphics = [
+    
     {
-      title: "Hotel Design (Figma)",
-      description: "UI/UX design for hotel landing page using Figma.",
-    },
-    {
-      title: "Canva Posters",
-      description: "Designed creative posters and graphics using Canva.",
+      title: "Wallpaper Posters",
+      description: "Designed using Canva.",
+       image: image1,
     },
   ];
 
@@ -127,9 +126,13 @@ const Portfolio = () => {
     console.log('Form submitted:', formData);
   };
 
-  const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
+const scrollToProjects = () => {
+  // The section for projects is under "works", not "projects"
+  const worksSection = document.getElementById("works");
+  if (worksSection) {
+    worksSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
  return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -144,10 +147,10 @@ const Portfolio = () => {
               <span className="text-gradient">Agrata Humagain</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6 fade-in fade-in-delay-1">
-              IT Student & Aspiring Frontend Developer
+              Beginner frontend developer and IT student, 
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto fade-in fade-in-delay-2">
-              Passionate about React, design, and creating user-friendly experiences.
+              learning React and design while building simple, user-friendly projects
             </p>
             <Button 
               onClick={scrollToProjects}
@@ -168,17 +171,13 @@ const Portfolio = () => {
               <div className="order-2 md:order-1 fade-in">
                 <h2 className="text-4xl font-bold mb-6">About Me</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  I'm an IT student with a passion for frontend development and creating 
-                  meaningful digital experiences. My journey in technology is driven by 
-                  curiosity and a desire to solve real-world problems through code.
+                 I’m an IT student with a growing passion for frontend development and building meaningful digital experiences. My journey in technology is fueled by curiosity and a drive to solve real-world problems through code.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Beyond academics, I'm actively involved in community service through 
-                  Nepal Red Cross, which have shaped my leadership and communication skills.
+                  Beyond academics, I actively volunteered with the Nepal Red Cross, which has helped me develop strong leadership and communication skills.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  I believe in the power of technology to make a positive impact and 
-                  am constantly learning new skills to stay at the forefront of web development.
+                I believe in the power of technology to create a positive impact and I’m always eager to learn  whether it’s React, design principles, or any new tools and frameworks that help me grow as a IT student and aspiring developer.
                 </p>
               </div>
               <div className="order-1 md:order-2 flex justify-center fade-in fade-in-delay-1">
@@ -232,6 +231,13 @@ const Portfolio = () => {
               {graphics.map((item) => (
                 <Card key={item.title} className="p-6 text-left">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  {item.image && (
+                    <img 
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-64 object-cover rounded-lg mb-4 border"
+                    />
+                  )}
                   <p className="text-muted-foreground">{item.description}</p>
                 </Card>
               ))}
@@ -329,7 +335,7 @@ const Portfolio = () => {
                 <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-8">
                   I'm always interested in discussing new opportunities, 
-                  projects,
+                  projects.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
