@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import image1 from '@/graphic photo/01.jpg'
+import image2 from '@/graphic photo/02.jpg'
 import { 
   Github, 
   Linkedin, 
@@ -85,6 +86,11 @@ const Portfolio = () => {
       title: "Wallpaper Posters",
       description: "Designed using Canva.",
        image: image1,
+    },
+     {
+      title: "Poster for Nail Tech",
+      description: "Designed using Canva.",
+       image: image2,
     },
   ];
 
@@ -171,13 +177,13 @@ const scrollToProjects = () => {
               <div className="order-2 md:order-1 fade-in">
                 <h2 className="text-4xl font-bold mb-6">About Me</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                 I’m an IT student with a growing passion for frontend development and building meaningful digital experiences. My journey in technology is fueled by curiosity and a drive to solve real-world problems through code.
+                  I’m an IT student with a growing passion for frontend development and building meaningful digital experiences. My journey in technology is fueled by curiosity and a drive to solve real-world problems through code.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
                   Beyond academics, I actively volunteered with the Nepal Red Cross, which has helped me develop strong leadership and communication skills.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                I believe in the power of technology to create a positive impact and I’m always eager to learn  whether it’s React, design principles, or any new tools and frameworks that help me grow as a IT student and aspiring developer.
+                  I believe in the power of technology to create a positive impact and I’m always eager to learn whether it’s React, design principles, or any new tools and frameworks that help me grow as an IT student and aspiring developer.
                 </p>
               </div>
               <div className="order-1 md:order-2 flex justify-center fade-in fade-in-delay-1">
@@ -229,14 +235,17 @@ const scrollToProjects = () => {
             {/* Graphics */}
             <TabsContent value="graphics" className="grid md:grid-cols-2 gap-8">
               {graphics.map((item) => (
-                <Card key={item.title} className="p-6 text-left">
+                <Card key={item.title} className="p-10 text-left">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   {item.image && (
-                    <img 
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-64 object-cover rounded-lg mb-4 border"
-                    />
+                    <div className="w-full flex justify-center items-center bg-muted rounded-lg mb-4 border" style={{ minHeight: '200px', maxHeight: '400px', height: 'auto' }}>
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="max-w-full max-h-96 object-contain"
+                        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                      />
+                    </div>
                   )}
                   <p className="text-muted-foreground">{item.description}</p>
                 </Card>
