@@ -49,7 +49,7 @@ const Portfolio = () => {
     {
       title: 'Fair Split',
       description: 'A React-based application for splitting expenses among friends with real-time calculations for my 4th semester final project.',
-      tech: ['React', 'JavaScript', 'CSS'],
+      tech: ['React', 'TypeScript','PLpgSQL'],
       github: 'https://github.com/agrata051/Final-FairSplit',
       live: 'https://final-fair-split.vercel.app/'
     },
