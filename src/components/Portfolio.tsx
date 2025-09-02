@@ -47,11 +47,25 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: 'Fair Split',
+      description: 'A React-based application for splitting expenses among friends with real-time calculations for my 4th semester final project.',
+      tech: ['React', 'JavaScript', 'CSS'],
+      github: 'https://github.com/agrata051/Final-FairSplit',
+      live: 'https://final-fair-split.vercel.app/'
+    },
+    {
       title: 'Hotel Website Design',
-      description: 'hotel website with modern UI/UX design using figma and react using its front end development. it just contain the lanidng page for learning purpose.',
+      description: 'hotel website with modern UI/UX design using figma and react using its front end development. it just contain the landing page for learning purpose.',
       tech: ['Figma', 'React', 'CSS', 'JavaScript','TypeScript'],
       github: 'https://github.com/agrata051/Bholenath-Hotel',
       live: 'https://bholenath-hotel.vercel.app/'
+    },
+    {
+      title: 'GO trip website cloning',
+      description: 'Clone of GoTrip website using React for learning purpose.',
+      tech: [ 'React', 'CSS', 'JavaScript'],
+      github: 'https://github.com/agrata051/Go-trip',
+      live: 'https://go-trip-delta.vercel.app/'
     },
     {
       title: 'Photography Portfolio',
@@ -68,13 +82,7 @@ const Portfolio = () => {
       live: 'https://main-portfolio-m255.vercel.app/'
     }
     ,
-    {
-      title: 'Fair Split(in development process)',
-      description: 'A React-based application for splitting expenses among friends with real-time calculations for my 4th semester final project.',
-      tech: ['React', 'JavaScript', 'CSS'],
-      github: '#',
-      live: '#'
-    },
+    
     {
       title: 'BDH LAB(in development process)',
       description: 'A real world frontend based website for Builders and Devlopers Hand located in chyasal,Lalitpur.',
