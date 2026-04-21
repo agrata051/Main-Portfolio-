@@ -11,10 +11,39 @@ import image2 from '@/graphic photo/02.jpg'
 import image3 from '@/graphic photo/03.jpg'
 import image4 from '@/graphic photo/04.jpg'
 import image5 from '@/graphic photo/05.jpg'
+import image6 from '@/graphic photo/06.jpg'
+import image7 from '@/graphic photo/07.jpg'
+import image8 from '@/graphic photo/08.jpg'
+import image9 from '@/graphic photo/09.jpg'
+import image10 from '@/graphic photo/10.jpg'
+import image11 from '@/graphic photo/11.jpg'
+import image12 from '@/graphic photo/12.jpg'
+import image13 from '@/graphic photo/13.jpg'
+import image14 from '@/graphic photo/14.jpg'
+import image15 from '@/graphic photo/15.jpg'
+import image16 from '@/graphic photo/16.jpg'
+import image17 from '@/graphic photo/17.jpg'
+import image18 from '@/graphic photo/18.jpg'
+import image19 from '@/graphic photo/19.jpg'
+import image20 from '@/graphic photo/20.jpg'
+import image21 from '@/graphic photo/21.jpg'
+import image22 from '@/graphic photo/22.jpg'
+import image23 from '@/graphic photo/23.jpg'
+import image24 from '@/graphic photo/24.jpg'
+import image25 from '@/graphic photo/25.jpg'
+import image26 from '@/graphic photo/26.jpg'
+import imagevideo1 from '@/graphic photo/video1.png'
+import imagevideo2 from '@/graphic photo/video2.png'
+import imagevideo3 from '@/graphic photo/video3.png'
+import imagevideo4 from '@/graphic photo/video4.png'
+import imagevideo5 from '@/graphic photo/video5.png'
+import imagevideo6 from '@/graphic photo/video6.png'
+import imagevideo7 from '@/graphic photo/video7.png'
+import imagevideo8 from '@/graphic photo/video8.png'
+
 import {
   Github,
   Linkedin,
-  Instagram,
   Mail,
   ExternalLink,
   Code,
@@ -42,9 +71,13 @@ const Portfolio = () => {
     { name: 'React.js', icon: Code },
     { name: 'JavaScript', icon: Code },
     { name: 'Excel', icon: Code },
-    { name: 'PowerPoint', icon: Code },
-    { name: 'Word', icon: Code },
-    { name: 'Canva', icon: Palette }
+    { name: 'Ads', icon: Palette },
+    { name: 'Marketing', icon: Code },
+    { name: 'Canva', icon: Palette },
+    { name: 'Figma', icon: Palette },
+    { name: 'Content', icon: Palette },
+    { name: 'Wors', icon: Code },
+    { name: 'Powerpoint', icon: Code }
   ];
 
   const projects = [
@@ -111,20 +144,206 @@ const Portfolio = () => {
       
        image: image5,
     },
+    {
+      
+       image: image6,
+    },
+    {
+      
+       image: image7,
+    },
+    {
+      
+       image: image8,
+    },
+    {
+      
+       image: image9,
+    },
+    {
+      
+       image: image10,
+    },
+    {
+      
+       image: image11,
+    },
+    {
+      
+       image: image12,
+    },
+    {
+      
+       image: image13,
+    },
+    {
+      
+       image: image14,
+    },
+    {
+      
+       image: image15,
+    },
+    {
+      
+       image: image16,
+    },
+    {
+      
+       image: image17,
+    },
+    {
+      
+       image: image18,
+    },
+    {
+      
+       image: image19,
+    },
+    {
+      
+       image: image20,
+    },
+    {
+      
+       image: image21,
+    },
+    {
+      
+       image: image22,
+    },
+    {
+      
+       image: image23,
+    },
+    {
+      
+       image: image24,
+    },
+    {
+      
+       image: image25,
+    },
+    {
+      
+       image: image26,
+    },
   ];
 
   const videos = [
     {
-      title: 'Add your video title here',
-      description: 'Add a short description of this video.',
-      embedUrl: '',
-      thumbnail: '',
-      platform: 'youtube' as const,
+      title: 'Kailash Mansarovar Yatra Content',
+      description: 'Content Promoting Kailash Yatra Package',
+      url: 'https://www.instagram.com/p/DU534a5APdd/',
+          thumbnail: imagevideo1,
+      platform: 'Instagram',
+    },
+    {
+      title: 'Product Content',
+      description: 'Content for Product selling',
+      url: 'https://www.facebook.com/reel/856654317064844',
+          thumbnail: imagevideo2,
+      platform: 'Facebook',
+    },
+    {
+      title: 'Product Content',
+      description: 'Content for Product selling',
+      url: 'https://www.facebook.com/reel/871103811962671',
+                thumbnail: imagevideo3,
+      platform: 'Facebook',
+    },
+    {
+      title: 'Product Content',
+      description: 'Content for Product selling',
+      url: 'https://www.facebook.com/reel/873963595590527',
+               thumbnail: imagevideo4,
+      platform: 'Facebook',
+    },
+    {
+      title: 'Product Content',
+      description: 'Content for Product selling',
+      url: 'https://www.facebook.com/reel/1390705825755309',
+          thumbnail: imagevideo5,
+      platform: 'Facebook',
+    },
+    {
+      title: 'Web Product',
+      description: 'Content for Promoting AI assistant web product',
+      url: 'https://www.linkedin.com/posts/pre-vibe_previbe-ai-productivity-activity-7394326792318132225-2Yxw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpfdqEBmCkKsE6inqmucwZx_AwvTGqPfJ8&fbclid=IwY2xjawRUIf9leHRuA2FlbQIxMABicmlkETE0Qnd0emRmVkczNEREQ1NLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlXDAb32Gh1OEYAqld9snykpyOTvPSurhqOE6aydpvkANZAcubI8cDdiG4kp_aem_PtXNTSCI-VzedwtdlM11Qw://www.linkedin.com/posts/pre-vibe_previbe-ai-productivity-activity-7394326792318132225-2Yxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpfdqEBmCkKsE6inqmucwZx_AwvTGqPfJ8&fbclid=IwY2xjawRUIdxleHRuA2FlbQIxMABicmlkETE0Qnd0emRmVkczNEREQ1NLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlXDAb32Gh1OEYAqld9snykpyOTvPSurhqOE6aydpvkANZAcubI8cDdiG4kp_aem_PtXNTSCI-VzedwtdlM11Qw',
+          thumbnail: imagevideo6,
+      platform: 'LinkedIn',
+    },
+    {
+      title: 'Web product ',
+      description: 'Content for Promoting AI assistant web product',
+      url: 'https://www.linkedin.com/posts/pre-vibe_ai-productivity-developers-activity-7395130538552102912-B8vw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpfdqEBmCkKsE6inqmucwZx_AwvTGqPfJ8&fbclid=IwY2xjawRUIZhleHRuA2FlbQIxMABicmlkETE0Qnd0emRmVkczNEREQ1NLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHq91pGSrtZlRMKfxKqUbi9b0ZMLqXOL7sLC0Mz_65rDN6MSdbxZ3PXksN6te_aem_pxjdd4gOtXOe8y2HdHj37gleHRuA2FlbQIxMABicmlkETE0Qnd0emRmVkczNEREQ1NLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlXDAb32Gh1OEYAqld9snykpyOTvPSurhqOE6aydpvkANZAcubI8cDdiG4kp_aem_PtXNTSCI',
+          thumbnail: imagevideo7,
+      platform: 'LinkedIn',
     },
   ];
 
+
   const experiences = [
-    
+    {
+      title: ' Digital Marketing Manager (Hybrid)',
+      organization: 'Horizon Trade Solution Pvt. Ltd.',
+      period: 'December/2025 - Present',
+      description: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Created scripts and content for product promotions.</li>
+          <li>Produced, edited, and posted reel videos for marketing campaigns.</li>
+          <li>Managed and ran paid advertisements on social media.</li>
+          <li>Communicated with customers and handled order coordination.</li>
+          <li>Processed and arranged product deliveries</li>
+        </ul>
+      )
+    },
+    {
+      title: ' Business Development Intern (Remote)',
+      organization: 'iFly Nepal.',
+      period: 'January/2026 - March/2026',
+      description: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Managed social media across platforms(Instagram, LinkedIn, TikTok, etc.)</li>
+          <li>Created and published reviews on Google, TripAdvisor, and other third-party sites.</li>
+          <li>Developed and uploaded travel/retreat content, blogs, and packages on websites and marketplaces.</li>
+          <li>Managed listings on platforms such as Viator, GetYourGuide, TourHQ, and PG World.</li>
+          <li>Supported content creation including ads, scripts, blogs, proposals, and email templates</li>
+          <li>Conducted B2B research, built email databases, and assisted with outreach campaigns</li>
+          <li>Maintained product data, pricing, and partner records</li>
+        </ul>
+      )
+    },
+     {
+      title: ' Business Development Intern (Remote)',
+      organization: 'iFly Nepal.',
+      period: 'January/2026 - March/2026',
+      description: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Managed social media across platforms(Instagram, LinkedIn, TikTok, etc.)</li>
+          <li>Created and published reviews on Google, TripAdvisor, and other third-party sites.</li>
+          <li>Developed and uploaded travel/retreat content, blogs, and packages on websites and marketplaces.</li>
+          <li>Managed listings on platforms such as Viator, GetYourGuide, TourHQ, and PG World.</li>
+          <li>Supported content creation including ads, scripts, blogs, proposals, and email templates</li>
+          <li>Conducted B2B research, built email databases, and assisted with outreach campaigns</li>
+          <li>Maintained product data, pricing, and partner records</li>
+        </ul>
+      )
+    },
+    {
+      title: ' Digital Marketing Analyst (Remote)',
+      organization: 'Fizanto',
+      period: 'October/2025 - January/2026',
+      description: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Contributed to digital marketing strategies for the AI-based SaaS product Pre-vibe, driving user sign-ups and engagement.</li>
+          <li>Created and optimized content for LinkedIn, Meta, and Reddit to increase brand awareness.</li>
+          <li>Analyzed key metrics(CTR, CPC, engagement rate) to improve campaign performance and ROI.</li>
+          <li>Collaborated with product and design teams to ensure consistent branding and messaging.</li>
+          <li>Conducted competitor and audience research to refine targeting strategies.</li>
+        </ul>
+      )
+    },
     {
       title: 'React Devloper -Internship ',
       organization: 'Sarbatra Inc',
@@ -182,11 +401,10 @@ const scrollToProjects = () => {
               <span className="text-gradient">Agrata Humagain</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6 fade-in fade-in-delay-1">
-              Beginner frontend developer and IT student, 
+              IT student with a passion for graphic design and digital marketing, beginner frontend developer.
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto fade-in fade-in-delay-2">
-              learning React and design while building simple, user-friendly projects
-            </p>
+Learning React, graphic design, and digital marketing while building simple, user-friendly projects.            </p>
             <Button 
               onClick={scrollToProjects}
               size="lg" 
@@ -206,14 +424,14 @@ const scrollToProjects = () => {
               <div className="order-2 md:order-1 fade-in">
                 <h2 className="text-4xl font-bold mb-6">About Me</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  I’m an IT student with a growing passion for frontend development and building meaningful digital experiences. My journey in technology is fueled by curiosity and a drive to solve real-world problems through code.
+                  I’m an IT student with a growing passion for frontend development, graphic design, and digital marketing, focused on building meaningful digital experiences. My journey in technology is driven by curiosity and a strong desire to solve real-world problems through creative and practical solutions.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Beyond academics, I actively volunteered with the Nepal Red Cross, which has helped me develop strong leadership and communication skills.
+                  Beyond academics, I have actively volunteered with the Nepal Red Cross, where I developed strong leadership, teamwork, and communication skills.
+
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  I believe in the power of technology to create a positive impact and I’m always eager to learn whether it’s React, design principles, or any new tools and frameworks that help me grow as an IT student and aspiring developer.
-                </p>
+I believe in the power of technology to create a positive impact, and I’m always eager to learn whether it’s React, design principles, marketing strategies, or new tools and frameworks that help me grow as an aspiring developerand digital marketer.                </p>
               </div>
               <div className="order-1 md:order-2 flex justify-center fade-in fade-in-delay-1">
                 <div className="relative">
@@ -324,86 +542,96 @@ const scrollToProjects = () => {
 
             {/* Videos */}
             <TabsContent value="videos">
-              {videos.every(v => !v.embedUrl) ? (
+              {videos.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-20 text-center">
                   <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mb-6">
-                    <Youtube className="w-10 h-10 text-muted-foreground" />
+                    <Youtube className="w-5 h-5 text-muted-foreground" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">No videos yet</h3>
                   <p className="text-muted-foreground max-w-sm">
-                    Add your video embed URLs to the <code className="bg-muted px-1 py-0.5 rounded text-sm">videos</code> array in Portfolio.tsx to showcase your video content here.
+                    Add videos to showcase your content here.
                   </p>
                 </div>
               ) : (
                 <div className="grid md:grid-cols-2 gap-8">
-                  {videos.filter(v => v.embedUrl).map((video, index) => (
-                    <Card key={index} className="overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-portfolio-lg">
-                      <div className="relative w-full bg-black" style={{ paddingTop: '56.25%' }}>
-                        <iframe
-                          src={video.embedUrl}
-                          title={video.title}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="absolute inset-0 w-full h-full"
-                        />
-                      </div>
-                      <div className="p-5 text-left">
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
-                            <Play className="w-4 h-4 text-red-500 fill-red-500" />
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-base leading-snug mb-1">{video.title}</h3>
-                            {video.description && (
-                              <p className="text-sm text-muted-foreground leading-relaxed">{video.description}</p>
-                            )}
+                  {videos.map((video, index) => (
+                    <a
+                      key={index}
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block"
+                    >
+                      <Card className="overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-portfolio-lg">
+
+                        {/* Thumbnail */}
+                        <div className="relative">
+                          <img
+                            src={video.thumbnail}
+                            alt={video.title}
+                            className="w-full h-56 object-cover"
+                          />
+
+                          {/* Overlay */}
+                          <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition">
+                            <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                              <Play className="w-6 h-6 text-black ml-0.5" />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </Card>
+
+                        {/* Content */}
+                        <div className="p-5 text-left">
+                          <h3 className="font-semibold text-base mb-1">{video.title}</h3>
+                          <p className="text-sm text-muted-foreground">{video.description}</p>
+                        </div>
+<div className="mb-2">
+  <span className="text-xs text-muted-foreground">
+    {video.platform}
+  </span>
+</div>
+                      </Card>
+                    </a>
                   ))}
                 </div>
               )}
             </TabsContent>
+
           </Tabs>
         </div>
       </section>
-
       {/* Experience Section */}
-      <section  id="experience" className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 fade-in">Experience & Volunteering</h2>
-            <div className="space-y-8">
-              {experiences.map((exp, index) => (
-                <Card key={exp.title} className={`card-portfolio fade-in fade-in-delay-${index + 1}`}>
-                  <div className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0">
-                        <Users className="w-8 h-8 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
-                        <div className="flex items-center gap-4 text-muted-foreground mb-3">
-                          <div className="flex items-center gap-1">
-                            <MapPin className="w-4 h-4" />
-                            <span>{exp.organization}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Calendar className="w-4 h-4" />
-                            <span>{exp.period}</span>
-                          </div>
-                        </div>
-                        <p className="text-muted-foreground">{exp.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
+<section id="experience" className="py-20">
+  <div className="container mx-auto px-6 max-w-5xl">
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Experience
+    </h2>
+
+    <div className="space-y-8">
+      {experiences.map((exp, index) => (
+        <Card key={index} className="p-6 text-left">
+
+          <h3 className="text-xl font-semibold">
+            {exp.title}
+          </h3>
+
+          <p className="text-primary font-medium">
+            {exp.organization}
+          </p>
+
+          <p className="text-sm text-muted-foreground mb-3">
+            {exp.period}
+          </p>
+
+          <div className="text-muted-foreground text-sm">
+            {exp.description}
           </div>
-        </div>
-      </section>
+
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section  id="contact" className="py-20 section-gradient">
