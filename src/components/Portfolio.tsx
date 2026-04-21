@@ -314,22 +314,6 @@ const Portfolio = () => {
         </ul>
       )
     },
-     {
-      title: ' Business Development Intern (Remote)',
-      organization: 'iFly Nepal.',
-      period: 'January/2026 - March/2026',
-      description: (
-        <ul className="list-disc pl-5 space-y-1">
-          <li>Managed social media across platforms(Instagram, LinkedIn, TikTok, etc.)</li>
-          <li>Created and published reviews on Google, TripAdvisor, and other third-party sites.</li>
-          <li>Developed and uploaded travel/retreat content, blogs, and packages on websites and marketplaces.</li>
-          <li>Managed listings on platforms such as Viator, GetYourGuide, TourHQ, and PG World.</li>
-          <li>Supported content creation including ads, scripts, blogs, proposals, and email templates</li>
-          <li>Conducted B2B research, built email databases, and assisted with outreach campaigns</li>
-          <li>Maintained product data, pricing, and partner records</li>
-        </ul>
-      )
-    },
     {
       title: ' Digital Marketing Analyst (Remote)',
       organization: 'Fizanto',
