@@ -76,7 +76,7 @@ const Portfolio = () => {
     { name: 'Canva', icon: Palette },
     { name: 'Figma', icon: Palette },
     { name: 'Content', icon: Palette },
-    { name: 'Wors', icon: Code },
+    { name: 'Word', icon: Code },
     { name: 'Powerpoint', icon: Code }
   ];
 
