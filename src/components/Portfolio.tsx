@@ -11,19 +11,21 @@ import image2 from '@/graphic photo/02.jpg'
 import image3 from '@/graphic photo/03.jpg'
 import image4 from '@/graphic photo/04.jpg'
 import image5 from '@/graphic photo/05.jpg'
-import { 
-  Github, 
-  Linkedin, 
-  Instagram, 
-  Mail, 
-  ExternalLink, 
-  Code, 
-  Palette, 
-  Users, 
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Mail,
+  ExternalLink,
+  Code,
+  Palette,
+  Users,
   Heart,
   MapPin,
   Calendar,
-  Send
+  Send,
+  Play,
+  Youtube
 } from 'lucide-react';
 import agrataPhoto from '@/assets/Screenshot 2024-12-22 201133.jpg';
 
@@ -108,6 +110,16 @@ const Portfolio = () => {
     {
       
        image: image5,
+    },
+  ];
+
+  const videos = [
+    {
+      title: 'Add your video title here',
+      description: 'Add a short description of this video.',
+      embedUrl: '',
+      thumbnail: '',
+      platform: 'youtube' as const,
     },
   ];
 
@@ -244,9 +256,10 @@ const scrollToProjects = () => {
           <h2 className="text-4xl font-bold mb-12">My Works</h2>
 
           <Tabs defaultValue="projects" className="w-full">
-            <TabsList className="flex justify-center mb-8">
+            <TabsList className="flex justify-center mb-8 gap-1">
               <TabsTrigger value="graphics">Graphics</TabsTrigger>
               <TabsTrigger value="projects">Projects</TabsTrigger>
+              <TabsTrigger value="videos">Videos</TabsTrigger>
             </TabsList>
 
             {/* Graphics */}
@@ -257,13 +270,11 @@ const scrollToProjects = () => {
                     <div className="w-full flex justify-center items-center bg-muted rounded-lg mb-4 border" style={{ minHeight: '200px', maxHeight: '400px', height: 'auto' }}>
                       <img
                         src={item.image}
-                      
                         className="max-w-full max-h-96 object-contain"
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
                     </div>
                   )}
-                
                 </Card>
               ))}
             </TabsContent>
@@ -309,6 +320,50 @@ const scrollToProjects = () => {
                   </div>
                 </Card>
               ))}
+            </TabsContent>
+
+            {/* Videos */}
+            <TabsContent value="videos">
+              {videos.every(v => !v.embedUrl) ? (
+                <div className="flex flex-col items-center justify-center py-20 text-center">
+                  <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mb-6">
+                    <Youtube className="w-10 h-10 text-muted-foreground" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">No videos yet</h3>
+                  <p className="text-muted-foreground max-w-sm">
+                    Add your video embed URLs to the <code className="bg-muted px-1 py-0.5 rounded text-sm">videos</code> array in Portfolio.tsx to showcase your video content here.
+                  </p>
+                </div>
+              ) : (
+                <div className="grid md:grid-cols-2 gap-8">
+                  {videos.filter(v => v.embedUrl).map((video, index) => (
+                    <Card key={index} className="overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-portfolio-lg">
+                      <div className="relative w-full bg-black" style={{ paddingTop: '56.25%' }}>
+                        <iframe
+                          src={video.embedUrl}
+                          title={video.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="absolute inset-0 w-full h-full"
+                        />
+                      </div>
+                      <div className="p-5 text-left">
+                        <div className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                            <Play className="w-4 h-4 text-red-500 fill-red-500" />
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-base leading-snug mb-1">{video.title}</h3>
+                            {video.description && (
+                              <p className="text-sm text-muted-foreground leading-relaxed">{video.description}</p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+              )}
             </TabsContent>
           </Tabs>
         </div>
