@@ -241,22 +241,15 @@ const Portfolio = () => {
     {
       title: 'Product Content',
       description: 'Content for Product selling',
-      url: 'https://www.facebook.com/reel/856654317064844',
+      url: 'https://www.facebook.com/reel/992251786486171',
           thumbnail: imagevideo2,
       platform: 'Facebook',
     },
     {
       title: 'Product Content',
       description: 'Content for Product selling',
-      url: 'https://www.facebook.com/reel/871103811962671',
+      url: 'https://www.facebook.com/reel/2357003688123885',
                 thumbnail: imagevideo3,
-      platform: 'Facebook',
-    },
-    {
-      title: 'Product Content',
-      description: 'Content for Product selling',
-      url: 'https://www.facebook.com/reel/873963595590527',
-               thumbnail: imagevideo4,
       platform: 'Facebook',
     },
     {
